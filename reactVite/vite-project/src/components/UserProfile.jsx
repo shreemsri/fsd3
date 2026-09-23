@@ -4,19 +4,19 @@ function UserProfile() {
   const [name, setName] = useState('John Doe');
   const [college, setCollege] = useState('abes');
 
-  const modifyName = () => {
+  function modifyName(){
     setName('shreem');
   };
   
-  const modifyCollege = () => {
+  function modifyCollege(){
     setCollege('uni');
   };
 
   return (
     <div>
       <h2>Student Details</h2>
-      <p><strong>Name:</strong> {name}</p>
-      <p><strong>College:</strong> {college}</p>
+      <p>Name: {name}</p>
+      <p>College: {college}</p>
 
       <div>
         <button onClick={modifyName}>Modify Name</button>
