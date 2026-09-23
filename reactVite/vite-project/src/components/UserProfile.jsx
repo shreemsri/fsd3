@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 
 function UserProfile() {
-  const [name, setName] = useState('John Doe');
-  const [college, setCollege] = useState('abes');
+  const [name, setNameto] = useState('John Doe');
+  const [college, setCollegeto] = useState('abes');
 
   function modifyName(){
-    setName('shreem');
+    setNameto('shreem');
   };
   
   function modifyCollege(){
-    setCollege('uni');
+    setCollegeto('uni');
   };
 
   return (
     <div>
-      <h2>Student Details</h2>
-      <p>Name: {name}</p>
-      <p>College: {college}</p>
+      <h1>Student Details</h1>
+      <h2>Name: {name}</h2>
+      <h2>College: {college}</h2>
 
       <div>
         <button onClick={modifyName}>Modify Name</button>
